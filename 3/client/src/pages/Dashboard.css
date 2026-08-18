@@ -1,0 +1,138 @@
+/* ── Dashboard ────────────────────────────────────────── */
+.dashboard-page {
+    padding: 2.5rem 1.5rem 4rem;
+}
+
+.dash-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.dash-greeting {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.dash-name {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dash-sub {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* Stats Cards */
+.dash-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.dash-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+}
+
+.dash-card-icon {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+}
+
+.dash-card-body {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.dash-card-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-bottom: 0.15rem;
+}
+
+.dash-card-value {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Security Info */
+.dash-info {
+    padding: 2rem;
+}
+
+.dash-info:hover {
+    transform: none;
+}
+
+.dash-info h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.info-item h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--accent-primary-hover);
+}
+
+.info-item p,
+.info-item li {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.info-item ul {
+    padding-left: 1.25rem;
+}
+
+.info-item li {
+    margin-bottom: 0.3rem;
+}
+
+.info-item code {
+    background: rgba(99, 102, 241, 0.12);
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: var(--accent-primary-hover);
+}
+
+.info-item p+p {
+    margin-top: 0.4rem;
+}
+
+@media (max-width: 600px) {
+    .dashboard-page {
+        padding: 1.5rem 1rem;
+    }
+
+    .dash-greeting {
+        font-size: 1.4rem;
+    }
+}

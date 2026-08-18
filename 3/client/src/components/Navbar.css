@@ -1,0 +1,92 @@
+/* ── Navbar ────────────────────────────────────────────── */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(10, 14, 26, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-glass);
+    padding: 0.75rem 0;
+    animation: slideDown 0.4s ease;
+}
+
+.navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-primary) !important;
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: -0.01em;
+}
+
+.brand-icon {
+    font-size: 1.3rem;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.nav-link {
+    color: var(--text-secondary) !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.4rem 0.7rem;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+}
+
+.nav-link:hover {
+    color: var(--text-primary) !important;
+    background: var(--bg-glass);
+}
+
+.nav-user {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.75rem;
+    background: var(--bg-glass);
+    border: 1px solid var(--border-glass);
+    border-radius: 9999px;
+}
+
+.nav-user-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.nav-signup-btn {
+    padding: 0.5rem 1.2rem !important;
+    font-size: 0.85rem !important;
+}
+
+.nav-logout-btn {
+    color: var(--accent-danger) !important;
+    font-size: 0.85rem;
+}
+
+.nav-logout-btn:hover {
+    background: rgba(239, 68, 68, 0.1) !important;
+}
+
+@media (max-width: 600px) {
+    .navbar-links {
+        gap: 0.4rem;
+    }
+
+    .nav-user-name {
+        display: none;
+    }
+}

@@ -1,0 +1,7 @@
+# Use this workspace to collaborate
+workspace:
+  id: a61f16c5-4185-43c8-8def-850159ec536e
+
+localResources:
+  collections:
+    - ../server/task_manager_postman_collection.json
