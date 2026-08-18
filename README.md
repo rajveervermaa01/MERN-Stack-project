@@ -341,4 +341,8 @@ This project is licensed under the MIT license. See the [LICENSE](LICENSE) file 
 
 © 2026 Alfido Tech. All Rights Reserved.
 
+<<<<<<< HEAD
 Made with ❤️ in India.
+=======
+Made with ❤️ in India.
+>>>>>>> 21eec4c (Initial commit)
